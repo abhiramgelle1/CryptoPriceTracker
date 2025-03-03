@@ -51,7 +51,10 @@ export default function CryptoDashboard() {
                         {filteredData.length > 0 ? (
                             filteredData.map((coin) => (
                                 <li key={coin.id} className="list-group-item d-flex justify-content-between align-items-center bg-dark text-white">
-                                    <span className="fs-5">{coin.name}</span>
+                                    <div className="d-flex align-items-center">
+                                        <img src={coin.image} alt={coin.name} className="me-3" width="40" height="40" />
+                                        <span className="fs-5">{coin.name}</span>
+                                    </div>
                                     <span className="fs-5 fw-bold">${coin.current_price.toFixed(2)}</span>
                                 </li>
                             ))

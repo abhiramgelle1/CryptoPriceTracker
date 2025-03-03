@@ -19,6 +19,5 @@ export const useCryptoPrices = () => {
         queryKey: ['cryptoPrices'],
         queryFn: fetchCryptoPrices,
         staleTime: 60000,
-        refetchOnWindowFocus: false,
     });
 };

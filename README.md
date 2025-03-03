@@ -4,11 +4,11 @@
 This is a **Crypto Price Tracker** built using **Next.js** with API integration, state management, and Bootstrap for styling. It fetches real-time cryptocurrency prices from the CoinGecko API, allowing users to search for specific cryptocurrencies, refresh prices, and view a polished, professional UI.
 
 ## **Tech Stack Used**
-- **Next.js** (React framework for SSR & CSR)
-- **Bootstrap** (For styling & responsiveness)
-- **React Query (TanStack Query)** (For state management & API calls)
-- **Axios** (For making HTTP requests)
-- **React Icons** (For icons used in the UI)
+- **Next.js** 
+- **Bootstrap**
+- **React Query (TanStack Query)**
+- **Axios** 
+- **React Icons** 
 
 ---
 
@@ -115,7 +115,7 @@ This README provides instructions for setting up and running the **Docusaurus do
 
 ## **1. Prerequisites**
 Ensure you have the following installed:
-- **Node.js (LTS version recommended)**
+- **Node.js (Latest version recommended)**
 - **npm or yarn**
 
 ---
@@ -149,53 +149,17 @@ To test the static build locally:
 ```sh
 npm run serve
 ```
-
 ---
 
-## **5. Project Structure**
-```
-crypto-price-tracker/
-│── docs/                  # Docusaurus Documentation
-│   ├── docs/              # Documentation content
-│   │   ├── intro.md       # Main documentation file
-│   ├── docusaurus.config.js # Docusaurus setup
-│   ├── sidebars.js        # Sidebar configuration
-│   ├── package.json       # Dependencies for Docusaurus
-│   ├── static/            # Static assets (optional)
-│   ├── src/               # Custom components (optional)
-```
-
----
-
-## **6. Troubleshooting**
-
-### **1. Docs Not Loading (404 Error)**
-If `http://localhost:3000/docs/intro` is not accessible:
-- Check that `intro.md` exists with your required content inside `docs/docs/`
-  ```
-- Restart the server:
-  ```sh
-  npm run start
-  ```
-
-### **2. Dependency Issues**
-If you see errors related to dependencies, try:
-```sh
-rm -rf node_modules package-lock.json
-npm cache clean --force
-npm install
-npm run start
-```
-
----
-
-## **7. Deployment (Optional)**
+## **5. Deployment**
 To deploy the documentation using GitHub Pages or Vercel:
 ```sh
 npm run build
 npm run deploy
 ```
 This will publish the documentation based on the configuration in `docusaurus.config.js`.
+
+---
 
 ## **Contact Information**
 For any queries, feel free to reach out:
