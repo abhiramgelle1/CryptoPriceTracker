@@ -1,4 +1,7 @@
-# Crypto Price Tracker - Complete Documentation
+# Crypto Price Tracker - Complete Setup Instructions
+
+Final Output Looks like:
+![image](https://github.com/user-attachments/assets/c8ba98d5-e5d2-4c82-89b9-7ae49f2626ed)
 
 ## **Project Overview**
 This is a **Crypto Price Tracker** built using **Next.js** with API integration, state management, and Bootstrap for styling. It fetches real-time cryptocurrency prices from the CoinGecko API, allowing users to search for specific cryptocurrencies, refresh prices, and view a polished, professional UI.
