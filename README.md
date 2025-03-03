@@ -104,11 +104,102 @@ You need to build the app before running in production:
 ```
 ---
 
+# Docusaurus Documentation Setup
+
+## **Overview**
+This README provides instructions for setting up and running the **Docusaurus documentation** for the Crypto Price Tracker project. The documentation is hosted locally at:
+
+**URL:** [http://localhost:3000/docs/intro](http://localhost:3000/docs/intro)
+
+---
+
+## **1. Prerequisites**
+Ensure you have the following installed:
+- **Node.js (LTS version recommended)**
+- **npm or yarn**
+
+---
+
+## **2. Installation**
+Navigate to the `docs/` directory and install dependencies:
+```sh
+cd docs
+npm install
+```
+
+---
+
+## **3. Running Locally**
+To start the Docusaurus server and view the documentation locally:
+```sh
+npm run start
+```
+This will launch the documentation at **http://localhost:3000/docs/intro**.
+
+---
+
+## **4. Building for Production**
+To generate a static site for deployment:
+```sh
+npm run build
+```
+The built files will be inside the `build/` directory.
+
+To test the static build locally:
+```sh
+npm run serve
+```
+
+---
+
+## **5. Project Structure**
+```
+crypto-price-tracker/
+│── docs/                  # Docusaurus Documentation
+│   ├── docs/              # Documentation content
+│   │   ├── intro.md       # Main documentation file
+│   ├── docusaurus.config.js # Docusaurus setup
+│   ├── sidebars.js        # Sidebar configuration
+│   ├── package.json       # Dependencies for Docusaurus
+│   ├── static/            # Static assets (optional)
+│   ├── src/               # Custom components (optional)
+```
+
+---
+
+## **6. Troubleshooting**
+
+### **1. Docs Not Loading (404 Error)**
+If `http://localhost:3000/docs/intro` is not accessible:
+- Check that `intro.md` exists with your required content inside `docs/docs/`
+  ```
+- Restart the server:
+  ```sh
+  npm run start
+  ```
+
+### **2. Dependency Issues**
+If you see errors related to dependencies, try:
+```sh
+rm -rf node_modules package-lock.json
+npm cache clean --force
+npm install
+npm run start
+```
+
+---
+
+## **7. Deployment (Optional)**
+To deploy the documentation using GitHub Pages or Vercel:
+```sh
+npm run build
+npm run deploy
+```
+This will publish the documentation based on the configuration in `docusaurus.config.js`.
+
 ## **Contact Information**
 For any queries, feel free to reach out:
 
 **Name:** Abhiram Gelle  
 **Email:** abhiramgelle738@gmail.com  
 **Phone:** +1 678-480-4408  
-
-
