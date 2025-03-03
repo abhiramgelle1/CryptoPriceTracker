@@ -4,11 +4,11 @@
 This is a **Crypto Price Tracker** built using **Next.js** with API integration, state management, and Bootstrap for styling. It fetches real-time cryptocurrency prices from the CoinGecko API, allowing users to search for specific cryptocurrencies, refresh prices, and view a polished, professional UI.
 
 ## **Tech Stack Used**
-- **Next.js** (React framework for SSR & CSR)
-- **Bootstrap** (For styling & responsiveness)
-- **React Query (TanStack Query)** (For state management & API calls)
-- **Axios** (For making HTTP requests)
-- **React Icons** (For icons used in the UI)
+- **Next.js** 
+- **Bootstrap** 
+- **React Query (TanStack Query)** 
+- **Axios** 
+- **React Icons** 
 
 ---
 
@@ -80,28 +80,11 @@ If you want to build the project for production:
 ---
 
 ## **Features & Functionality**
-**Live Cryptocurrency Prices** (Top 5 Cryptos from CoinGecko)
-**Search Bar** (Filters results based on user input)
-**Refresh Button** (Fetches latest price data)
-**Loading & Error Handling** (Spinner and alert messages for better UX)
-**Responsive Design** (Bootstrap ensures mobile-friendly UI)
-**Professional Look** (Dark mode, modern UI, icons for better readability)
+**1. Live Cryptocurrency Prices** (Top 5 Cryptos from CoinGecko)
+**2. Search Bar** (Filters results based on user input)
+**3. Refresh Button** (Fetches latest price data)
+**4. Loading & Error Handling** (Spinner and alert messages for better UX)
 
----
-
-## **Troubleshooting & Common Issues**
-### **1. `Module Not Found: react-icons`**
-Run:
-```sh
- npm install react-icons
-```
-
-### **2. `Error: Could not find a production build`**
-You need to build the app before running in production:
-```sh
- npm run build
- npm start
-```
 ---
 
 ## **Contact Information**
